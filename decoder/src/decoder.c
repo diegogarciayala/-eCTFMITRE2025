@@ -33,7 +33,7 @@ extern int hash(void *data, size_t len, uint8_t *hash_out);
 
 #define MAX_CHANNEL_COUNT 8
 // Para ajustarnos al test, definimos el canal de emergencia como 1.
-#define EMERGENCY_CHANNEL 1
+#define EMERGENCY_CHANNEL 0
 #define FRAME_SIZE 64
 #define DEFAULT_CHANNEL_TIMESTAMP 0xFFFFFFFFFFFFFFFF
 #define FLASH_FIRST_BOOT 0xDEADBEEF
