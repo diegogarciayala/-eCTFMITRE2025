@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
+#include <stdlib.h>
 #include <time.h>
 
 #include "mxc_device.h"
@@ -101,9 +102,7 @@ typedef struct {
 // Variables globales
 // -------------------------------------------------------------
 static flash_entry_t  decoder_status;
-static uint32_t       last_seq_num       = 0;
 static decoder_keys_t decoder_keys;
-static uint8_t        channel_keys[MAX_CHANNEL_COUNT][KEY_SIZE];
 static char           output_buf[128];
 
 // Ejemplo de array para "channels" provenientes de secrets_1.bin
